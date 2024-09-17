@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "redhat";
+  src: url("/assets/fonts/static/RedHatText-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "redhat";
+  src: url("/assets/fonts/static/RedHatText-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  font-family: "redhat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: min(1440px, 90%);
+  margin: 2rem auto;
+}
+ul::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+/* Track */
+ul::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #edf2f7;
+}
+
+/* Handle */
+ul::-webkit-scrollbar-thumb {
+  background: #e11d48;
+  border-radius: 100vh;
+  border: 3px solid #edf2f7;
+}
+
+/* Handle on hover */
+ul::-webkit-scrollbar-thumb:hover {
+  background: #bd1c3f;
+}
